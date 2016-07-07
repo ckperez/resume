@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <title>Chris Perez | Software Developer</title>
+  </head>
+  <body ng-app="resumeApp">
+    <header>
+      <!-- Name, address, phone, email, icons for linkedin, github, codepen? -->
+      <h1>Chris Perez</h1>
+    </header>
+    <main ng-controller="ResumeController as ctrl">
+      <profile-directive profile="ctrl.profile"></profile-directive>
+      <projects-directive projects="ctrl.projects"></projects-directive>
+      <skills-directive skills="ctrl.skills"></skills-directive>
+      <experience-directive experience="ctrl.experience"></experience-directive>
+      <education-directive education="ctrl.education"></education-directive>
+    </main>
+    <footer>
+      <p>footer things</p>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>

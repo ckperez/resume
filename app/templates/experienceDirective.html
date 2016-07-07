@@ -1,0 +1,10 @@
+<section>
+  <h1>Experience</h1>
+  <div ng-repeat="job in experience">
+    <h2>{{job.titles}}</h2>
+    <h2>{{job.dates}}</h2>
+    <ul>
+      <li ng-repeat="role in positions.responsibilities">{{role}}</li>
+    </ul>
+  </div>
+</section>

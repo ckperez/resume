@@ -1,0 +1,7 @@
+module.exports = function(app){
+  require('./profileDirective')(app);
+  require('./projectsDirective')(app);
+  require('./skillsDirective')(app);
+  require('./experienceDirective')(app);
+  require('./educationDirective')(app);
+};
