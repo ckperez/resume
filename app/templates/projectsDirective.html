@@ -4,7 +4,6 @@
     <a href="{{project.link}}"><h2>{{project.title}}</h2></a>
     <h2>{{project.dates}}</h2>
     <p>{{project.description}}</p>
-    <p>{{project.tech}}</p>
-    <p>{{project.role}}</p>
+    <p ng-repeat="detail in project.contributions">{{detail}}</p>
   </div>
 </section>

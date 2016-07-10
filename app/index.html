@@ -7,19 +7,32 @@
   </head>
   <body ng-app="resumeApp">
     <header>
-      <!-- Name, address, phone, email, icons for linkedin, github, codepen? -->
       <h1>Chris Perez</h1>
+      <nav>
+        <ul>
+          <a href="http://www.linkedin.com/ckperez" target="_blank"><li class="social"></li></a>
+          <a href="http://github.com/ckperez" target="_blank"><li class="social"></li></a>
+          <li class="social" ng-click="email?"></li>
+          <li class="social" ng-click="phone?"></li>
+        </ul>
+      </nav>
     </header>
+
     <main ng-controller="ResumeController as ctrl">
       <profile-directive profile="ctrl.profile"></profile-directive>
-      <projects-directive projects="ctrl.projects"></projects-directive>
       <skills-directive skills="ctrl.skills"></skills-directive>
+      <projects-directive projects="ctrl.projects"></projects-directive>
       <experience-directive experience="ctrl.experience"></experience-directive>
       <education-directive education="ctrl.education"></education-directive>
     </main>
+
     <footer>
-      <p>footer things</p>
+      <p>Made with <a href="https://angularjs.org/" target="_blank">Angular.js</a></p>
+      <a href="http://www.linkedin.com/ckperez" target="_blank"><p>LinkedIn</p></a>
+      <a href="http://github.com/ckperez" target="_blank"><p>GitHub</p></a>
+      <a href="./docs/resume.pdf" target="_self" download="resume.pdf"><p>Resume as PDF</p></a>
     </footer>
+
     <script src="bundle.js"></script>
   </body>
 </html>
