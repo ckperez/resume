@@ -3,15 +3,15 @@ module.exports = function(app){
 };
 
 function ResumeController(){
-  this.profile = 'Full-stack developer with 5 years\' experience in...';
+  this.profile = 'Full-stack developer specializing in MEAN stack. Team leader and full-lifecycle project manager with 5 years of experience in SEO and content marketing.';
   this.projects = [
     {
-      title:'Ping Pong Thing',
-      link: 'http...',
-      description: 'Ladder...',
-      contributions:[],
-      dates: '...',
-      tags: ['Angular', 'Node.js', 'NoSQL', 'Sass']
+      title:'Pong Fellows',
+      link: 'https://pongfellows.herokuapp.com/#/',
+      description: 'Angular.js web app for recording and facilitating intra-office ping pong competitions.',
+      contributions:['Designed schemas for storing competitor information and game data in MongoDB.', 'Built REST API with authentication and authorization to access persisted competitor and game data with Express.js.', 'Devised controller methods and services for efficiently updating the database and front-end leaderboard.', 'Architected client-side routing with ngRoute.'],
+      dates: 'July 2016',
+      tags: ['Angular.js', 'Node.js', 'NoSQL', 'CSS', 'Heroku', 'Rest APIs', 'Algorithms']
     },
     {
       title:'PlopJS',
@@ -30,7 +30,7 @@ function ResumeController(){
       tags: ['MVC', 'jQuery', 'HTML Templating', 'Project Management', 'AJAX', 'Google Maps', 'Sass']
     }
   ];
-  this.skills = ['Node.js', 'Express', 'Angular', 'MongoDB', 'SQL', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Sass', 'AJAX', 'Git/GitHub', 'Command Line', 'MVC', 'Test-Driven Development', 'RESTful Web Services', 'SEO/Content Marketing'];
+  this.skills = ['Node.js', 'Express.js', 'Angular.js', 'MongoDB', 'SQL', 'JavaScript', 'jQuery', 'HTML5', 'CSS3', 'Sass', 'AJAX', 'Git/GitHub', 'Command Line', 'MVC', 'TDD', 'REST', 'SEO', 'Gulp/Build Tools'];
   this.experience = [
     {
       company: 'Student Experts',

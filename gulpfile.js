@@ -3,6 +3,7 @@
 const gulp = require('gulp');
 const webpack = require('webpack-stream');
 const clean = require('gulp-clean');
+const sass = require('gulp-sass');
 
 const paths = {
   js: __dirname + '/app/**/*.js',
@@ -11,7 +12,7 @@ const paths = {
 };
 
 gulp.task('clean', ()=>{
-  return gulp.src('./build/*', {read:false})
+  return gulp.src('./build/**/*', {read:false})
     .pipe(clean());
 });
 
@@ -20,7 +21,7 @@ gulp.task('copy-html', ['clean'], ()=>{
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('copy-css', ['clean'], ()=>{
+gulp.task('copy-css', ['clean', 'sass'], ()=>{
   return gulp.src(paths.css)
     .pipe(gulp.dest('./build'));
 });
@@ -35,7 +36,22 @@ gulp.task('bundle', ['clean'], ()=>{
     .pipe(gulp.dest('./build'));
 });
 
-gulp.task('bundle:test', () => {
+gulp.task('wipe-css', ()=>{
+  return gulp.src('./app/css/style.css', {read:false})
+    .pipe(clean());
+});
+
+gulp.task('sass', ['clean'], ()=>{
+  return gulp.src('./app/css/style.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./app/css/style.css'));
+});
+
+gulp.task('sass-watch', ()=>{
+  gulp.watch('./app/css/**/*.scss', ['sass']);
+});
+
+gulp.task('bundle:test', ()=>{
   return gulp.src(__dirname + '/test/*_test.js')
     .pipe(webpack({
       output: {

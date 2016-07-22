@@ -4,4 +4,6 @@ module.exports = function(app){
   require('./skillsDirective')(app);
   require('./experienceDirective')(app);
   require('./educationDirective')(app);
+  require('./topDirective')(app);
+  require('./bottomDirective')(app);
 };

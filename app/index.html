@@ -2,23 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
     <title>Chris Perez | Software Developer</title>
   </head>
-  <body ng-app="resumeApp">
-    <header>
-      <h1>Chris Perez</h1>
-      <nav>
-        <ul>
-          <a href="http://www.linkedin.com/ckperez" target="_blank"><li class="social"></li></a>
-          <a href="http://github.com/ckperez" target="_blank"><li class="social"></li></a>
-          <li class="social" ng-click="email?"></li>
-          <li class="social" ng-click="phone?"></li>
-        </ul>
-      </nav>
-    </header>
+  <body ng-app="resumeApp" ng-controller="ResumeController as ctrl">
 
-    <main ng-controller="ResumeController as ctrl">
+    <top-directive></top-directive>
+
+    <main>
       <profile-directive profile="ctrl.profile"></profile-directive>
       <skills-directive skills="ctrl.skills"></skills-directive>
       <projects-directive projects="ctrl.projects"></projects-directive>
@@ -26,13 +17,8 @@
       <education-directive education="ctrl.education"></education-directive>
     </main>
 
-    <footer>
-      <p>Made with <a href="https://angularjs.org/" target="_blank">Angular.js</a></p>
-      <a href="http://www.linkedin.com/ckperez" target="_blank"><p>LinkedIn</p></a>
-      <a href="http://github.com/ckperez" target="_blank"><p>GitHub</p></a>
-      <a href="./docs/resume.pdf" target="_self" download="resume.pdf"><p>Resume as PDF</p></a>
-    </footer>
+    <bottom-directive></bottom-directive>
 
-    <script src="bundle.js"></script>
+    <script src="./bundle.js"></script>
   </body>
 </html>
