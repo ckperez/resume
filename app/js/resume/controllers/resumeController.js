@@ -16,7 +16,7 @@ function ResumeController(){
     {
       title:'PlopJS',
       link: 'http://npmjs.com/package/plopjs',
-      description: 'Command line interface for streamlining project setup with easy-to-use boilerplates and templates.',
+      description: 'Command line interface for streamlining project setup with boilerplates and templates.',
       contributions:['Built primary functionality with Node.js and various NPM packages for file system manipulation and Git/GitHub integration', 'Oversaw testing with Mocha framework and Chai assertion library', 'Directed documentation in GitHub-flavor markdown'],
       dates: 'June 2016',
       tags: ['Node.js', 'Project Management', 'TDD', 'Command Line', 'I/O']
@@ -24,7 +24,7 @@ function ResumeController(){
     {
       title:'RepFindr',
       link: 'http://rep-findr.firebaseapp.com',
-      description: 'Single-page application for finding elected US officials and their contact information based on user address.',
+      description: 'Single-page app for finding US elected officials\' contact information.',
       contributions:['Archtected project according to MVC principles', 'Used jQuery and Sass for UX/UI', 'Implemented HTML templating with Handlebars.js and client-side routing with Page.js', 'Leveraged Google Maps and Civic Data APIs and managed data programmatically', 'Created Firebase persistence layer to collect user data'],
       dates: 'May 2016',
       tags: ['MVC', 'jQuery', 'HTML Templating', 'Project Management', 'AJAX', 'Google Maps', 'Sass']
@@ -48,7 +48,7 @@ function ResumeController(){
     {
       company: 'Student Experts',
       titles: 'Senior Project Manager',
-      dates: '1/13 - 6/16',
+      dates: '3/12 - 1/13',
       responsibilities: [
         'Oversaw content marketing programs for up to 65 clients on a monthly basis',
         'Developed organizational structure and internal career tracks for writers and editors',
@@ -58,8 +58,8 @@ function ResumeController(){
     },
     {
       company: 'Student Experts',
-      titles: 'Copywriting Contractor, Head Staff Writer, Copyeditor',
-      dates: '1/13 - 6/16',
+      titles: 'Copyeditor',
+      dates: '5/11 - 3/12',
       responsibilities: [
         'Copyedited 75,000 words of online marketing content per week',
         'Provided mentoring and training for new writers and led employee development'
@@ -68,9 +68,9 @@ function ResumeController(){
   ];
   this.education = [
     {
-      school: 'Code Fellows',
+      school: 'Code Fellows - Seattle',
       certificate: 'Certificate',
-      concentration: 'Advanced JavaScript Development',
+      concentration: 'Advanced JavaScript',
       dates: '2016'
     },
     {

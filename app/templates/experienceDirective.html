@@ -1,7 +1,7 @@
 <section class="experience">
   <h1>Experience</h1>
-  <div ng-repeat="job in experience">
-    <h2>{{job.titles}}</h2>
+  <div ng-repeat="job in experience" class="container">
+    <h2>{{job.titles}} at {{job.company}}</h2>
     <h2>{{job.dates}}</h2>
     <ul>
       <li ng-repeat="deets in job.responsibilities">{{deets}}</li>

@@ -1,4 +1,19 @@
-a {
+a{
   text-decoration: none;
   color:inherit;
+}
+
+header{
+  li:hover, a:hover{
+    color: $babyturd;
+    cursor: pointer;
+  }
+}
+
+footer{
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
 }

@@ -1,3 +1,20 @@
 .education{
-  
+  h1{
+
+  }
+  div:not([ng-repeat]){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    div{
+      text-align: center;
+      margin: 0.5em 0;
+      h2{
+
+      }
+      h3{
+        font-size: 1.1em;
+      }
+    }
+  }
 }
