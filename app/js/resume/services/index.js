@@ -1,3 +1,4 @@
 module.exports = function(app){
-  require('./animationService');
+  require('./jsonDataService')(app);
+  require('./animationService')(app);
 };
