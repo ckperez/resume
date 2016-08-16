@@ -1,0 +1,37 @@
+[
+  {
+    "company": "Student Experts",
+    "titles": "Account Manager, Program Manager",
+    "dates": "1/13 - 6/16",
+    "responsibilities":
+      [
+        "Developed and implemented new content marketing products and services, and negotiated contract terms",
+        "Conferred with clients about the direction and execution of new content marketing strategies",
+        "Managed campaigns and products through lifecycle - concept, development, distribution, reworking, renewal, etc",
+        "Oversaw creative direction and brand consistency for clients with local and nationwide presence", "Managed a rotating team of copywriters and marketers, selecting personnel to suit projects",
+        "Reported directly to CEO, interviewed job applicants, conducted performance reviews, implemented improvement plans"
+      ]
+  },
+  {
+    "company": "Student Experts",
+    "titles": "Senior Project Manager",
+    "dates": "3/12 - 1/13",
+    "responsibilities":
+      [
+        "Oversaw content marketing programs for up to 65 clients on a monthly basis",
+        "Developed organizational structure and internal career tracks for writers and editors",
+        "Collaborated on development of new products and services",
+        "Developed a style guide for content marketing in the automotive industry"
+      ]
+  },
+  {
+    "company": "Student Experts",
+    "titles": "Copyeditor",
+    "dates": "5/11 - 3/12",
+    "responsibilities":
+      [
+        "Copyedited 75,000 words of online marketing content per week",
+        "Provided mentoring and training for new writers and led employee development"
+      ]
+  }
+]

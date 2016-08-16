@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Pong Fellows",
+    "link": "https://pongfellows.herokuapp.com/#/",
+    "description": "Angular.js web app for recording and facilitating intra-office ping pong competitions.",
+    "contributions": ["Designed schemas for storing competitor information and game data in MongoDB.", "Built REST API with authentication and authorization to access persisted competitor and game data with Express.js.", "Devised controller methods and services for efficiently updating the database and front-end leaderboard.", "Architected client-side routing with ngRoute."],
+    "dates": "July 2016",
+    "tags": ["Angular.js", "Node.js", "NoSQL", "CSS", "Heroku", "Rest APIs", "Algorithms"]
+  },
+  {
+    "title": "PlopJS",
+    "link": "http://npmjs.com/package/plopjs",
+    "description": "Command line interface for streamlining project setup with boilerplates and templates.",
+    "contributions": ["Built primary functionality with Node.js and various NPM packages for file system manipulation and Git/GitHub integration", "Oversaw testing with Mocha framework and Chai assertion library", "Directed documentation in GitHub-flavor markdown"],
+    "dates": "June 2016",
+    "tags": ["Node.js", "Project Management", "TDD", "Command Line", "I/O"]
+  },
+  {
+    "title": "RepFindr",
+    "link": "http://rep-findr.firebaseapp.com",
+    "description": "Single-page app for finding US elected officials' contact information.",
+    "contributions": ["Archtected project according to MVC principles", "Used jQuery and Sass for UX/UI", "Implemented HTML templating with Handlebars.js and client-side routing with Page.js", "Leveraged Google Maps and Civic Data APIs and managed data programmatically", "Created Firebase persistence layer to collect user data"],
+    "dates": "May 2016",
+    "tags": ["MVC", "jQuery", "HTML Templating", "Project Management", "AJAX", "Google Maps", "Sass"]
+  }
+]
