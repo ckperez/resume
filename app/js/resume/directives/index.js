@@ -5,5 +5,6 @@ module.exports = function(app){
   require('./experienceDirective')(app);
   require('./educationDirective')(app);
   require('./topDirective')(app);
+  //require('./contactDirective')(app);
   require('./bottomDirective')(app);
 };

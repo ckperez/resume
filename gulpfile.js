@@ -9,7 +9,8 @@ const paths = {
   js: __dirname + '/app/**/*.js',
   html: __dirname + '/app/**/*.html',
   css: __dirname + '/app/**/*.css',
-  fonts: __dirname + '/app/**/*.{eot,ttf,woff,svg}'
+  fonts: __dirname + '/app/**/*.{eot,ttf,woff,svg}',
+  docs: __dirname + '/app/docs/*'
 };
 
 gulp.task('clean', ()=>{
@@ -29,6 +30,11 @@ gulp.task('copy-css', ['clean', 'sass'], ()=>{
 gulp.task('copy-fonts', ['clean'], () => {
   return gulp.src(paths.fonts)
     .pipe(gulp.dest('./build'));
+});
+
+gulp.task('copy-docs', ['clean'], ()=>{
+  return gulp.src(paths.docs)
+    .pipe(gulp.dest('./build/docs'));
 });
 
 gulp.task('bundle', ['clean'], ()=>{
@@ -69,6 +75,6 @@ gulp.task('watch', ()=>{
   gulp.watch('./app/*', ['build']);
 });
 
-gulp.task('build', ['clean', 'sass', 'copy-html', 'copy-css', 'copy-fonts', 'bundle']);
+gulp.task('build', ['clean', 'sass', 'copy-html', 'copy-css', 'copy-fonts', 'copy-docs', 'bundle']);
 
 gulp.task('default', ['build']);

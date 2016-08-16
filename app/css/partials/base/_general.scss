@@ -1,10 +1,15 @@
 html{
   @include gradient-from-left($lightgrey, $lightergrey, $lightgrey);
+  margin: 0;
+  height: 100%;
   body{
+    @include gradient-from-left($lightgrey, $lightergrey, $lightgrey);
     font-family: $default, sans-serif;
     color: $blackish;
+    height: 100%;
+    margin: 0;
     h1{
-      color: $babyturd;
+      color: $green;
       margin: 0 auto;
       text-align: center;
     }
@@ -13,11 +18,12 @@ html{
     }
     section{
       display: block;
+      z-index: 50;
     }
     .container{
       background-color: white;
       width: 100%;
-      border-bottom: 4px solid $babyturd;
+      border-bottom: 4px solid $green;
       margin-top: 2em;
       margin-bottom: 4em;
       padding: 1em 0;

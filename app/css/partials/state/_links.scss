@@ -4,8 +4,11 @@ a{
 }
 
 header{
-  li:hover, a:hover{
-    color: $babyturd;
+  a:hover{
+    color: $green;
+    cursor: pointer;
+  }
+  nav:hover{
     cursor: pointer;
   }
 }
