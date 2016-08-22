@@ -1,17 +1,13 @@
 module.exports = function(app){
-  app.controller('ResumeController', ['$http', ResumeController]);
+  app.controller('ResumeController', ['$http', '$location', 'navigationService', ResumeController]);
 };
 
-function ResumeController($http){
+function ResumeController($http, $location, navigationService){
   this.$http = $http;
   this.errorMsg = function(err){
     console.error(`Error getting data : ${err}`);
   };
   this.profile = 'Full-stack developer specializing in MEAN stack. Team leader and full-lifecycle project manager with 5 years of experience in SEO and content marketing.';
-  this.skills;
-  this.projects;
-  this.experience;
-  this.education;
 
   this.getSkills = function(){
     $http.get('/db/skills.json')
@@ -24,6 +20,9 @@ function ResumeController($http){
     $http.get('/db/projects.json')
       .then((res)=>{
         this.projects = res.data;
+        this.project = this.projects.filter(function(p){
+          return p.title.toLowerCase().replace(' ', '-') == $location.url().split('/').pop();
+        })[0];
       }, this.errorMsg);
   };
 
@@ -40,6 +39,16 @@ function ResumeController($http){
         this.education = res.data;
       }, this.errorMsg);
   };
+
+  // this.getProject = function(){
+  //   this.project = this.projects.filter(function(p){
+  //     return p.title.toLowerCase().replace(' ', '-') == $location.url.split('/').pop();
+  //   });
+  // };
+
+  this.goHome = navigationService.goHome;
+  this.goToProject = navigationService.goToProject;
+
   this.getSkills();
   this.getProjects();
   this.getExperience();

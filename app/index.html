@@ -5,23 +5,13 @@
     <link type="text/css" rel="stylesheet" href="./css/zerofy.css">
     <link type="text/css" rel="stylesheet" href="./css/icons.css">
     <link type="text/css" rel="stylesheet" href="./css/style.css">
-    <title>Chris Perez | Software Developer</title>
+    <title>Chris Perez | Full-Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body ng-app="resumeApp" ng-controller="ResumeController as ctrl">
-
     <top-directive></top-directive>
-
-    <main>
-      <profile-directive profile="ctrl.profile"></profile-directive>
-      <skills-directive skills="ctrl.skills"></skills-directive>
-      <projects-directive projects="ctrl.projects"></projects-directive>
-      <experience-directive experience="ctrl.experience"></experience-directive>
-      <education-directive education="ctrl.education"></education-directive>
-    </main>
-
+    <ng-view></ng-view>
     <bottom-directive></bottom-directive>
-
     <script src="./bundle.js"></script>
   </body>
 </html>
