@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const webpack = require('webpack-stream');
 const del = require('del');
 const sass = require('gulp-sass');
+const babel = require('gulp-babel');
 
 const paths = {
   js: __dirname + '/app/**/*.js',
@@ -11,7 +12,8 @@ const paths = {
   css: __dirname + '/app/**/*.css',
   fonts: __dirname + '/app/**/*.{eot,ttf,woff,svg}',
   docs: __dirname + '/app/docs/*',
-  db: __dirname + '/db/*.json'
+  db: __dirname + '/db/*.json',
+  img: __dirname + '/app/img/*'
 };
 
 gulp.task('clean', ()=>{
@@ -38,6 +40,11 @@ gulp.task('copy-docs', ['clean'], ()=>{
     .pipe(gulp.dest('./build/docs'));
 });
 
+gulp.task('copy-images', ['clean'], ()=>{
+  return gulp.src(paths.img)
+    .pipe(gulp.dest('./build/img'));
+});
+
 gulp.task('copy-db', ['clean'], ()=>{
   return gulp.src(paths.db)
     .pipe(gulp.dest('./build/db'));
@@ -49,6 +56,19 @@ gulp.task('bundle', ['clean'], ()=>{
       output: {
         filename: 'bundle.js'
       }
+    }))
+    .pipe(gulp.dest('./build'));
+});
+
+gulp.task('package', ['clean'], ()=>{
+  return gulp.src(paths.js)
+    .pipe(webpack({
+      output: {
+        filename: 'bundle.js'
+      }
+    }))
+    .pipe(babel({
+      presets: ['es2015']
     }))
     .pipe(gulp.dest('./build'));
 });
@@ -81,6 +101,8 @@ gulp.task('watch', ()=>{
   gulp.watch('./app/*', ['build']);
 });
 
-gulp.task('build', ['clean', 'sass', 'copy-html', 'copy-css', 'copy-fonts', 'copy-docs', 'copy-db', 'bundle']);
+gulp.task('build', ['clean', 'sass', 'copy-html', 'copy-css', 'copy-fonts', 'copy-docs', 'copy-images', 'copy-db', 'bundle']);
+
+gulp.task('production', ['clean', 'sass', 'copy-html', 'copy-css', 'copy-fonts', 'copy-docs', 'copy-images', 'copy-db', 'package']);
 
 gulp.task('default', ['build']);
