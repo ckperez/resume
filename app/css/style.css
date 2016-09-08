@@ -168,11 +168,17 @@ a {
   text-decoration: none;
   color: inherit; }
 
+header h1:hover {
+  cursor: pointer; }
+
 header a:hover {
   color: #005B0B;
   cursor: pointer; }
 
 header nav:hover {
+  cursor: pointer; }
+
+.projects h2:hover {
   cursor: pointer; }
 
 footer a:hover {

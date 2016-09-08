@@ -4,6 +4,9 @@ a{
 }
 
 header{
+  h1:hover{
+    cursor: pointer;
+  }
   a:hover{
     color: $green;
     cursor: pointer;
@@ -11,6 +14,10 @@ header{
   nav:hover{
     cursor: pointer;
   }
+}
+
+.projects h2:hover{
+  cursor: pointer;
 }
 
 footer{
