@@ -1,10 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 header div {
   height: 3em;
   max-width: 960px;
   margin: 0 auto 2em auto;
   padding-top: 1em;
-  border-bottom: 4px solid #005B0B; }
+  border-bottom: 2px solid #01B0F0; }
   header div .name {
     font-size: 2.5em; }
     @media only screen and (min-width: 768px) {
@@ -30,7 +30,7 @@ header div {
         padding: 0 0.25em; }
       header div nav ul li div p {
         display: inline;
-        font-family: "Droid Sans"; }
+        font-family: "Poppins"; }
 
 footer {
   position: absolute;
@@ -67,12 +67,12 @@ html {
     background: -o-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
     background: -moz-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
     background: linear-gradient(to right, #F2F2F2, #FEFEFE, #F2F2F2);
-    font-family: "Droid Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #333;
     height: 100%;
     margin: 0; }
     html body h1 {
-      color: #005B0B;
+      color: #AEEE00;
       margin: 0 auto;
       text-align: center; }
     html body ul {
@@ -83,7 +83,7 @@ html {
     html body .container {
       background-color: white;
       width: 100%;
-      border-bottom: 4px solid #005B0B;
+      border-bottom: 2px solid #01B0F0;
       margin-top: 2em;
       margin-bottom: 4em;
       padding: 1em 0; }
@@ -172,7 +172,7 @@ header h1:hover {
   cursor: pointer; }
 
 header a:hover {
-  color: #005B0B;
+  color: #AEEE00;
   cursor: pointer; }
 
 header nav:hover {
