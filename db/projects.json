@@ -24,7 +24,11 @@
     "dates": "June 2016",
     "tags": ["Node.js", "Project Management", "TDD", "Command Line", "I/O"],
     "stories": ["My team and I realized that there was a lot of stylized boilerlpate required for projects, so we decided to streamline that.",
-    ""],
+    "We needed a tool that could access a user's file system, so we leveraged the fs-extra library.",
+    "Our tool had to interface with GitHub, so we leveraged a new library called NodeGit.",
+    "PlopJS had to be thoroghly tested, so we employed Mocha and Chai testing across the application.",
+    "Users had to be able to create new templates, so we created a plop.json structure and an init function.",
+    "The tool had to be deployed and accessible to developers, so we published it to NPM."],
     "pics": ["./img/plopjs1.png", "./img/plopjs2.png"]
   },
   {
@@ -36,19 +40,27 @@
     "dates": "May 2016",
     "tags": ["MVC", "jQuery", "HTML Templating", "Project Management", "AJAX", "Google Maps", "Sass"],
     "stories": ["My team developed an idea for an app that would give the average American easier access to the contact info for the elected officials that represent them.",
-    ""],
+    "We wanted users to get useful information based on limited input, so we wrote the primary UI to take in a user's address.",
+    "Calls to the Civic Data API returned massive objects, so we sorted through the data for relevant information.",
+    "Our app had to collect and persist data, so we leveraged a NoSQL database to store user addresses and other data.",
+    "Users needed an easy way to see representatives' contact info, so we set up templated modals for each official.",
+    "We wanted users to have a map of the nearest ballot drop-off point as well, so we tapped into the Google Maps API."],
     "pics": ["./img/repfindr1.png", "./img/repfindr2.png"]
   },
   {
     "title": "Hacker Hangout",
     "link": "http://ckperez.github.io",
     "sourceUrl": "https://github.com/ckperez/hackerhangout",
-    "description": "A visual and interactive rating site for helping developers and remote workers find a place to work.",
-    "contributions": ["Archtected project according to MVC principles", "Used jQuery and Sass for UX/UI", "Implemented HTML templating with Handlebars.js and client-side routing with Page.js", "Leveraged Google Maps and Civic Data APIs and managed data programmatically", "Created Firebase persistence layer to collect user data"],
+    "description": "A visually engaging site for helping freelancers find a place to work. No frameworks, jQuery, templates, or preprocessors.",
+    "contributions": ["Developed initial concept for app and architected site structure", "Designed and developed UX/UI of home page with vanilla JavaScript and CSS", "Architected site and created wireframe", "Devised lazy-loading strategy for video background", "Led team of developers with no more than 1 month of experience"],
     "dates": "April 2016",
-    "tags": ["MVC", "jQuery", "HTML Templating", "Project Management", "AJAX", "Google Maps", "Sass"],
-    "stories": ["My team developed an idea for an app that would give the average American easier access to the contact info for the elected officials that represent them.",
-    ""],
-    "pics": ["./img/repfindr1.png", "./img/repfindr2.png"]
+    "tags": ["HTML5", "CSS3", "JavaScript", "Chart.js", "Lazy Loading", "UX/UI", "Sass"],
+    "stories": ["My team started with a plan to offer a rating site based on the hacker-friendliness of restaurants, bars, and coffeeshops.",
+    "On this project, all contributors were putting into practice one month's training in basic web development.",
+    "We were prohibited from using jQuery or any frameworks or libraries aside from Chart.js.",
+    "The project guidelines required three separate HTML documents, so we designed and mapped the site accordingly.",
+    "We wanted to exhibit high levels of interactivity, so we implemented a 5-star rating system and dynamic chart generation.",
+    "Our project was being assessed based on UX/UI, so we worked out a clean color scheme and used a smooth video background, among other features."],
+    "pics": ["./img/hacker1.png", "./img/hacker2.png", "./img/hacker3.png", "./img/hacker4.png"]
   }
 ]
