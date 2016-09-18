@@ -1,0 +1,15 @@
+<section>
+  <h1>{{project.title}}</h1>
+  <h2>{{project.dates}}</h2>
+  <div class="project-container">
+    <div class="info">
+      <h3>about the app</h3>
+      <p ng-repeat="story in project.stories">{{story}}</p>
+      <a href="{{project.link}}" target="_blank">See it in action</a>
+      <a href="{{project.sourceUrl}}" target="_blank">Check out the source code</a>
+    </div>
+    <div class="pics">
+      <div ng-repeat="pic in project.pics"><img src="{{pic}}" /></div>
+    </div>
+  </div>
+</section>

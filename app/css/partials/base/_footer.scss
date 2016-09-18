@@ -1,0 +1,24 @@
+footer{
+  position: absolute;
+  background-color: $blackish;
+  color: $lightergrey;
+
+  ul{
+    padding: 1em 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    @media only screen and (min-width: $ipad){
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    li{
+      text-align: right;
+      margin: 0.25em 0.5em;
+      @media only screen and (min-width: $ipad){
+        display: inline-block;
+      }
+    }
+  }
+}

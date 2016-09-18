@@ -1,0 +1,18 @@
+// Partials
+@import "./partials/globals";
+@import "./partials/base/header";
+@import "./partials/base/footer";
+@import "./partials/base/general";
+@import "./partials/layout/layout";
+@import "./partials/modules/education";
+@import "./partials/modules/experience";
+@import "./partials/modules/profile";
+@import "./partials/modules/projects";
+@import "./partials/modules/projectPage";
+@import "./partials/modules/skills";
+@import "./partials/modules/menu";
+@import "./partials/state/links";
+@import "./partials/state/sectionHeadings";
+
+// Vendor
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');

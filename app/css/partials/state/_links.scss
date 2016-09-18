@@ -1,0 +1,30 @@
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+header{
+  h1:hover{
+    cursor: pointer;
+  }
+  a:hover{
+    color: $green;
+    cursor: pointer;
+  }
+  nav:hover{
+    cursor: pointer;
+  }
+}
+
+.projects h2:hover{
+  cursor: pointer;
+  color: #777;
+}
+
+footer{
+  a{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}

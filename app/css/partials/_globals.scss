@@ -1,0 +1,46 @@
+//colors
+$blue: #01B0F0;
+$green: #AEEE00;
+$blackish: #333;
+$red: #DD1B16;
+$lightergrey: #FEFEFE;
+$lightgrey: #F2F2F2;
+
+
+//fonts
+$default: 'Poppins';
+
+// Media Queries
+$phone: 375px;
+$ipad: 768px;
+$desktop: 960px;
+
+// Mixins
+@mixin border-radius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin box-sizing($box-sizing){
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  -ms-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
+@mixin box-shadow($box-shadow){
+  -webkit-box-shadow: $box-shadow;
+  -moz-box-shadow: $box-shadow;
+  -ms-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin gradient-from-left($left, $middle, $right){
+  background: $middle;
+  background: -webkit-linear-gradient(left, $left, $middle, $right);
+  background: -o-linear-gradient(left, $left, $middle, $right);
+  background: -moz-linear-gradient(left, $left, $middle, $right);
+  background: linear-gradient(to right,  $left, $middle, $right);
+}

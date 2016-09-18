@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+header div {
+  height: 5em;
+  max-width: 960px;
+  margin: 0 auto 2em auto;
+  padding-top: 0.1em;
+  border-bottom: 2px solid #01B0F0; }
+  header div .name {
+    font-size: 3em;
+    font-weight: 500; }
+    @media only screen and (min-width: 768px) {
+      header div .name {
+        text-align: left;
+        font-size: 4em; } }
+  @media only screen and (max-width: 767px) {
+    header div nav {
+      display: none; } }
+  @media only screen and (min-width: 768px) {
+    header div nav {
+      margin-top: -2.2em;
+      margin-right: 0.25em;
+      font-size: 1.75em;
+      float: right; } }
+  header div nav ul li {
+    display: inline-block;
+    font-size: 1.2em; }
+
+footer {
+  position: absolute;
+  background-color: #333;
+  color: #FEFEFE; }
+  footer ul {
+    padding: 1em 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    @media only screen and (min-width: 768px) {
+      footer ul {
+        flex-direction: row;
+        justify-content: space-around; } }
+    footer ul li {
+      text-align: right;
+      margin: 0.25em 0.5em; }
+      @media only screen and (min-width: 768px) {
+        footer ul li {
+          display: inline-block; } }
+
+html {
+  background: #FEFEFE;
+  background: -webkit-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+  background: -o-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+  background: -moz-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+  background: linear-gradient(to right, #F2F2F2, #FEFEFE, #F2F2F2);
+  margin: 0;
+  height: 100%; }
+  html body {
+    background: #FEFEFE;
+    background: -webkit-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+    background: -o-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+    background: -moz-linear-gradient(left, #F2F2F2, #FEFEFE, #F2F2F2);
+    background: linear-gradient(to right, #F2F2F2, #FEFEFE, #F2F2F2);
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    height: 100%;
+    margin: 0; }
+    html body .content-box {
+      min-height: 100vh; }
+    html body h1 {
+      color: #AEEE00;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 400;
+      font-size: 3em; }
+    html body ul {
+      list-style: none; }
+    html body section {
+      display: block;
+      z-index: 50; }
+    html body .container {
+      background-color: white;
+      width: 100%;
+      border-bottom: 2px solid #01B0F0;
+      margin-top: 2em;
+      margin-bottom: 4em;
+      padding: 1em 0; }
+
+header {
+  position: relative;
+  width: 100%; }
+
+main {
+  width: 100%;
+  margin: 0 auto; }
+  @media only screen and (min-width: 960px) {
+    main {
+      width: 960px; } }
+
+footer {
+  width: 100%;
+  position: absolute; }
+
+.education div:not([ng-repeat]) {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .education div:not([ng-repeat]) div {
+    text-align: center;
+    margin: 0.5em 0; }
+    .education div:not([ng-repeat]) div h2 {
+      font-weight: 600; }
+    .education div:not([ng-repeat]) div h3 {
+      font-size: 1em;
+      font-weight: 400; }
+
+.experience div {
+  text-align: center; }
+  .experience div h2 {
+    margin: 0.25em auto;
+    font-weight: 600; }
+  .experience div ul {
+    margin: 0.5em 0;
+    text-align: center; }
+    .experience div ul li {
+      font-size: 1.1em;
+      line-height: 1.3em; }
+
+.profile div p {
+  font-size: 1.15em;
+  margin: 1em 0.75em;
+  line-height: 1.35em; }
+
+@media only screen and (min-width: 768px) {
+  .projects {
+    overflow: hidden; }
+    .projects ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; }
+    .projects > div {
+      width: 100%;
+      margin-top: 2em;
+      margin-bottom: 4em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow: auto;
+      flex: 0; }
+      .projects > div .container {
+        margin: 0 2em 0 0;
+        min-width: 25em;
+        height: 28em; }
+    .projects h2, .projects h3 {
+      text-align: center;
+      margin-top: 0.5em;
+      font-weight: 600; }
+    .projects h4 {
+      color: #01B0F0;
+      margin-top: 0.5em;
+      margin-left: 1em;
+      margin-right: 1em;
+      font-weight: 300; }
+    .projects p {
+      margin: 0.5em 1em; } }
+
+.projects h2, .projects h3, .projects h4, .projects p {
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
+
+project-directive section h2 {
+  margin: 0 auto 1em auto;
+  text-align: center;
+  font-weight: 600; }
+
+project-directive section .project-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  @media only screen and (min-width: 768px) {
+    project-directive section .project-container > div {
+      width: 48%; } }
+  project-directive section .project-container .info h3 {
+    margin-bottom: 1em;
+    font-weight: 600; }
+  project-directive section .project-container .info p {
+    margin-bottom: 1em; }
+  project-directive section .project-container .info a {
+    color: #01B0F0;
+    text-decoration: underline;
+    padding-right: 1em; }
+    project-directive section .project-container .info a:hover {
+      color: #333; }
+  project-directive section .project-container .pics div {
+    width: 100%;
+    margin-bottom: 2em; }
+    project-directive section .project-container .pics div img {
+      max-width: 100%; }
+
+.skills ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .skills ul li {
+    display: inline-block;
+    min-width: 8.5em;
+    margin: 0.5em 0 0.5em 0.25em; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+header h1:hover {
+  cursor: pointer; }
+
+header a:hover {
+  color: #AEEE00;
+  cursor: pointer; }
+
+header nav:hover {
+  cursor: pointer; }
+
+.projects h2:hover {
+  cursor: pointer;
+  color: #777; }
+
+footer a:hover {
+  text-decoration: underline; }
