@@ -3,6 +3,9 @@ html{
   margin: 0;
   height: 100%;
   body{
+    .content-box{
+      min-height: 100vh;
+    }
     @include gradient-from-left($lightgrey, $lightergrey, $lightgrey);
     font-family: $default, sans-serif;
     color: $blackish;

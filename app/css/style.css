@@ -6,10 +6,12 @@ header div {
   padding-top: 0.1em;
   border-bottom: 2px solid #01B0F0; }
   header div .name {
-    font-size: 4em; }
+    font-size: 3em;
+    font-weight: 500; }
     @media only screen and (min-width: 768px) {
       header div .name {
-        text-align: left; } }
+        text-align: left;
+        font-size: 4em; } }
   @media only screen and (max-width: 767px) {
     header div nav {
       display: none; } }
@@ -62,6 +64,8 @@ html {
     color: #333;
     height: 100%;
     margin: 0; }
+    html body .content-box {
+      min-height: 100vh; }
     html body h1 {
       color: #AEEE00;
       margin: 0 auto;
@@ -106,7 +110,7 @@ footer {
     .education div:not([ng-repeat]) div h2 {
       font-weight: 600; }
     .education div:not([ng-repeat]) div h3 {
-      font-size: 1.1em;
+      font-size: 1em;
       font-weight: 400; }
 
 .experience div {
@@ -157,6 +161,10 @@ footer {
       font-weight: 300; }
     .projects p {
       margin: 0.5em 1em; } }
+
+.projects h2, .projects h3, .projects h4, .projects p {
+  margin-left: 0.5em;
+  margin-right: 0.5em; }
 
 project-directive section h2 {
   margin: 0 auto 1em auto;
@@ -212,7 +220,8 @@ header nav:hover {
   cursor: pointer; }
 
 .projects h2:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  color: #777; }
 
 footer a:hover {
   text-decoration: underline; }

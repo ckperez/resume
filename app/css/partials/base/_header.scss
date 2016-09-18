@@ -6,9 +6,11 @@ header {
     padding-top: 0.1em;
     border-bottom: 2px solid $blue;
     .name {
-      font-size: 4em;
+      font-size: 3em;
+      font-weight: 500;
       @media only screen and (min-width: $ipad){
         text-align: left;
+        font-size: 4em;
       }
     }
     // .profile-pic{

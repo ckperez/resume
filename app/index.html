@@ -11,7 +11,9 @@
   </head>
   <body ng-app="resumeApp" ng-controller="ResumeController as ctrl">
     <top-directive></top-directive>
-    <ng-view></ng-view>
+    <div class="content-box">
+      <ng-view></ng-view>
+    </div>
     <bottom-directive></bottom-directive>
     <script src="./bundle.js"></script>
   </body>
