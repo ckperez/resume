@@ -2,15 +2,51 @@
   h1{
 
   }
-  ul{
+  .container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    li{
-      display: inline-block;
-      min-width: 8.5em;
-      margin: 0.5em 0 0.5em 0.25em;
+    >div{
+      width: 20%;
+      min-width: 7em;
+      .skill-name{
+        p{
+          font-size: 1em;
+          font-weight: 500;
+          min-width: 7em;
+          padding-left: 0.5em;
+          @media only screen and (min-width: $ipad){
+            padding-left: 2em;
+          }
+        }
+      }
+      .dot-box{
+        width: 100%;
+        padding-left: 0.5em;
+        margin-bottom: 1.5em;
+        @media only screen and (min-width: $ipad){
+          padding-left: 2em;
+        }
+        .dot{
+          width: 0.75em;
+          height: 0.75em;
+          border: 1px solid $blue;
+          border-radius: 50%;
+          float: left;
+          margin-right: 0.5em;
+        }
+        .full{
+          background-color: $blue;
+        }
+        .half{
+          transition: background .5s;
+        }
+
+        .empty{
+          //no background for dots
+        }
+      }
     }
+
   }
 }

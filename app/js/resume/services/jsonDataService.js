@@ -2,8 +2,8 @@ module.exports = function(app){
   app.factory('jsonDataService', function($http){
     const service = {};
 
-    service.getSkills = function(){
-      $http.get('/db/skills.json')
+    service.getData = function(section){
+      $http.get('/db/' + section + '.json')
         .then((res)=>{
           console.log('service', res.data);
           return res.data;
