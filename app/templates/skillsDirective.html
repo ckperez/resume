@@ -3,7 +3,7 @@
   <div class="container">
     <div ng-repeat="skill in skills">
       <div class="skill-name">
-        <h2>{{skill.skillName}}</h2>
+        <p>{{skill.skillName}}</p>
       </div>
       <div class="dot-box">
         <div ng-repeat="level in skill.skillLevel track by $index" class="{{level}} dot"></div>

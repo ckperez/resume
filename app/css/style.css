@@ -199,26 +199,35 @@ project-directive section .project-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around; }
-  .skills .container div {
-    width: 19%; }
-    .skills .container div .skill-name h2 {
+  .skills .container > div {
+    width: 20%;
+    min-width: 7em; }
+    .skills .container > div .skill-name p {
       font-size: 1em;
-      font-weight: 500; }
-    .skills .container div .dot-box {
-      width: 100%; }
-      .skills .container div .dot-box .dot {
-        width: 0.5em;
-        height: 0.5em;
+      font-weight: 500;
+      min-width: 7em;
+      padding-left: 0.5em; }
+      @media only screen and (min-width: 768px) {
+        .skills .container > div .skill-name p {
+          padding-left: 2em; } }
+    .skills .container > div .dot-box {
+      width: 100%;
+      padding-left: 0.5em;
+      margin-bottom: 1.5em; }
+      @media only screen and (min-width: 768px) {
+        .skills .container > div .dot-box {
+          padding-left: 2em; } }
+      .skills .container > div .dot-box .dot {
+        width: 0.75em;
+        height: 0.75em;
         border: 1px solid #01B0F0;
         border-radius: 50%;
         float: left;
-        margin-right: 0.2em; }
-      .skills .container div .dot-box .full {
+        margin-right: 0.5em; }
+      .skills .container > div .dot-box .full {
         background-color: #01B0F0; }
-      .skills .container div .dot-box .half {
+      .skills .container > div .dot-box .half {
         transition: background .5s; }
-      .skills .container div .dot-box .blink {
-        background-color: #01B0F0; }
 
 a {
   text-decoration: none;
@@ -240,3 +249,19 @@ header nav:hover {
 
 footer a:hover {
   text-decoration: underline; }
+
+.half {
+  background-color: #01B0F0;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running; }
+
+@keyframes blink {
+  0% {
+    background-color: transparent; }
+  100% {
+    background-color: #01B0F0; } }
