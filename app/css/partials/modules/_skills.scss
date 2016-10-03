@@ -2,15 +2,43 @@
   h1{
 
   }
-  ul{
+  .container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    li{
-      display: inline-block;
-      min-width: 8.5em;
-      margin: 0.5em 0 0.5em 0.25em;
+    div{
+      width: 19%;
+      .skill-name{
+        h2{
+          font-size: 1em;
+          font-weight: 500;
+        }
+      }
+      .dot-box{
+        width: 100%;
+        .dot{
+          width: 0.5em;
+          height: 0.5em;
+          border: 1px solid $blue;
+          border-radius: 50%;
+          float: left;
+          margin-right: 0.2em;
+        }
+        .full{
+          background-color: $blue;
+        }
+        .half{
+          transition: background .5s;
+        }
+
+        .blink{
+          background-color: $blue;
+        }
+        .empty{
+          //no background for dots
+        }
+      }
     }
+
   }
 }

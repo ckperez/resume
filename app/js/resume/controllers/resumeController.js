@@ -40,12 +40,6 @@ function ResumeController($http, $location, navigationService){
       }, this.errorMsg);
   };
 
-  // this.getProject = function(){
-  //   this.project = this.projects.filter(function(p){
-  //     return p.title.toLowerCase().replace(' ', '-') == $location.url.split('/').pop();
-  //   });
-  // };
-
   this.goHome = navigationService.goHome;
   this.goToProject = navigationService.goToProject;
 

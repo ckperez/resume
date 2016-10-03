@@ -195,15 +195,30 @@ project-directive section .project-container {
     project-directive section .project-container .pics div img {
       max-width: 100%; }
 
-.skills ul {
+.skills .container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: space-around; }
-  .skills ul li {
-    display: inline-block;
-    min-width: 8.5em;
-    margin: 0.5em 0 0.5em 0.25em; }
+  .skills .container div {
+    width: 19%; }
+    .skills .container div .skill-name h2 {
+      font-size: 1em;
+      font-weight: 500; }
+    .skills .container div .dot-box {
+      width: 100%; }
+      .skills .container div .dot-box .dot {
+        width: 0.5em;
+        height: 0.5em;
+        border: 1px solid #01B0F0;
+        border-radius: 50%;
+        float: left;
+        margin-right: 0.2em; }
+      .skills .container div .dot-box .full {
+        background-color: #01B0F0; }
+      .skills .container div .dot-box .half {
+        transition: background .5s; }
+      .skills .container div .dot-box .blink {
+        background-color: #01B0F0; }
 
 a {
   text-decoration: none;

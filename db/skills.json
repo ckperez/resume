@@ -1,20 +1,82 @@
 [
-  "Node.js",
-  "Express.js",
-  "Angular.js",
-  "MongoDB",
-  "SQL",
-  "JavaScript",
-  "jQuery",
-  "HTML5",
-  "CSS3",
-  "Sass",
-  "AJAX",
-  "Git/GitHub",
-  "Command Line",
-  "MVC",
-  "TDD",
-  "REST",
-  "SEO",
-  "Gulp/Build Tools"
+  {
+    "skillName":"JavaScript",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"Node.js",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"Express.js",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"Angular.js",
+    "skillLevel":["full", "full", "full", "full", "half"]
+  },
+  {
+    "skillName":"React.js",
+    "skillLevel":["full", "full", "half", "empty", "empty"]
+  },
+  {
+    "skillName":"Java",
+    "skillLevel":["full", "half", "empty", "empty", "empty"]
+  },
+  {
+    "skillName":"REST APIs",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"AJAX",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"SQL",
+    "skillLevel":["full", "full", "full", "empty", "empty"]
+  },
+  {
+    "skillName":"MongoDB",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"Ruby/Rails",
+    "skillLevel":["half", "empty", "empty", "empty", "empty"]
+  },
+  {
+    "skillName":"jQuery",
+    "skillLevel":["full", "full", "full", "full", "half"]
+  },
+  {
+    "skillName":"HTML5",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"CSS3",
+    "skillLevel":["full", "full", "full", "full", "half"]
+  },
+  {
+    "skillName":"Sass/SCSS",
+    "skillLevel":["full", "full", "full", "full", "half"]
+  },
+  {
+    "skillName":"Bash/Shell",
+    "skillLevel":["full", "full", "half", "empty", "empty"]
+  },
+  {
+    "skillName":"Git/GitHub",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  },
+  {
+    "skillName":"TDD",
+    "skillLevel":["full", "full", "full", "full", "empty"]
+  },
+  {
+    "skillName":"MV*",
+    "skillLevel":["full", "full", "full", "full", "half"]
+  },
+  {
+    "skillName":"SEO",
+    "skillLevel":["full", "full", "full", "full", "full"]
+  }
 ]
