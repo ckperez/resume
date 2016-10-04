@@ -8,14 +8,14 @@ header div {
   header div .name {
     font-size: 3em;
     font-weight: 500; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 769px) {
       header div .name {
         text-align: left;
         font-size: 4em; } }
   @media only screen and (max-width: 767px) {
     header div nav {
       display: none; } }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     header div nav {
       margin-top: -2.2em;
       margin-right: 0.25em;
@@ -35,14 +35,14 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 769px) {
       footer ul {
         flex-direction: row;
         justify-content: space-around; } }
     footer ul li {
       text-align: right;
       margin: 0.25em 0.5em; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 769px) {
         footer ul li {
           display: inline-block; } }
 
@@ -120,17 +120,19 @@ footer {
     font-weight: 600; }
   .experience div ul {
     margin: 0.5em 0;
-    text-align: center; }
+    text-align: left;
+    padding: 0.1em 3em; }
     .experience div ul li {
       font-size: 1.1em;
-      line-height: 1.3em; }
+      line-height: 1.3em;
+      padding: .2em 0; }
 
 .profile div p {
   font-size: 1.15em;
-  margin: 1em 0.75em;
+  margin: 1em 2em;
   line-height: 1.35em; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .projects {
     overflow: hidden; }
     .projects ::-webkit-scrollbar {
@@ -175,7 +177,7 @@ project-directive section .project-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 769px) {
     project-directive section .project-container > div {
       width: 48%; } }
   project-directive section .project-container .info h3 {
@@ -207,14 +209,14 @@ project-directive section .project-container {
       font-weight: 500;
       min-width: 7em;
       padding-left: 0.5em; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 769px) {
         .skills .container > div .skill-name p {
           padding-left: 2em; } }
     .skills .container > div .dot-box {
       width: 100%;
       padding-left: 0.5em;
       margin-bottom: 1.5em; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 769px) {
         .skills .container > div .dot-box {
           padding-left: 2em; } }
       .skills .container > div .dot-box .dot {
@@ -255,7 +257,7 @@ footer a:hover {
 .half {
   background-color: #01B0F0;
   animation-name: blink;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   animation-delay: 0;
   animation-direction: alternate;
@@ -265,5 +267,11 @@ footer a:hover {
 @keyframes blink {
   0% {
     background-color: transparent; }
+  25% {
+    background-color: rgba(1, 176, 240, 0.25); }
+  50% {
+    background-color: rgba(1, 176, 240, 0.5); }
+  75% {
+    background-color: rgba(1, 176, 240, 0.75); }
   100% {
     background-color: #01B0F0; } }
