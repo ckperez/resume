@@ -1,7 +1,7 @@
 .half{
   background-color: $blue;
   animation-name: blink;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease;
   animation-delay: 0;
   animation-direction: alternate;
@@ -11,7 +11,16 @@
 
 @keyframes blink {
   0%{
-    background-color: transparent;;
+    background-color: transparent;
+  }
+  25%{
+    background-color: $blueFade1;
+  }
+  50%{
+    background-color: $blueFade2;
+  }
+  75%{
+    background-color: $blueFade3;
   }
   100%{
     background-color: $blue;
