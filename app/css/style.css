@@ -228,6 +228,8 @@ project-directive section .project-container {
         background-color: #01B0F0; }
       .skills .container > div .dot-box .half {
         transition: background .5s; }
+      .skills .container > div .dot-box .empty {
+        background-color: transparent; }
 
 a {
   text-decoration: none;

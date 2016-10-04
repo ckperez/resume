@@ -41,9 +41,8 @@
         .half{
           transition: background .5s;
         }
-
         .empty{
-          //no background for dots
+          background-color: transparent;
         }
       }
     }
