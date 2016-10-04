@@ -20,7 +20,13 @@ function ResumeController($http, $location, navigationService){
     $http.get('/db/projects.json')
       .then((res)=>{
         this.projects = res.data;
-        this.project = this.projects.filter(function(p){
+      }, this.errorMsg);
+  };
+
+  this.getProject = function(){
+    $http.get('/db/projects.json')
+      .then((res)=>{
+        this.project = res.data.filter(function(p){
           return p.title.toLowerCase().replace(' ', '-') == $location.url().split('/').pop();
         })[0];
       }, this.errorMsg);
@@ -43,8 +49,14 @@ function ResumeController($http, $location, navigationService){
   this.goHome = navigationService.goHome;
   this.goToProject = navigationService.goToProject;
 
-  this.getSkills();
-  this.getProjects();
-  this.getExperience();
-  this.getEducation();
+  this.initHome = function(){
+    this.getSkills();
+    this.getProjects();
+    this.getExperience();
+    this.getEducation();
+  };
+
+  this.initProject = function(){
+    this.getProject();
+  };
 }

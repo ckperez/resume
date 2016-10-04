@@ -13,19 +13,6 @@ header {
         font-size: 4em;
       }
     }
-    // .profile-pic{
-    //   background-image: url('../img/profile1.png');
-    //   background-repeat: no-repeat;
-    //   background-position: center;
-    //   background-size: cover;
-    //   border-radius: 50%;
-    //   width: 100px;
-    //   height: 100px;
-    //   float: left;
-    //   border: 3px solid $green;
-    //   margin: 0;
-    //   padding: 0;
-    // }
     nav{
       @media only screen and (max-width: 767px){
         display: none;
@@ -42,19 +29,6 @@ header {
           font-size: 1.2em;
           a{
           }
-          // div{
-          //   display: inline;
-          //   background-color: white;
-          //   border-radius: 3px;
-          //   &:not(.social){
-          //     margin-left: -0.25em;
-          //     padding: 0 0.25em;
-          //   }
-          //   p{
-          //     display: inline;
-          //     font-family: $default;
-          //   }
-          // }
         }
       }
     }
